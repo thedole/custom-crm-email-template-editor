@@ -1,0 +1,26 @@
+{
+  "name": "CustomCrmEmailTemplates",
+  "version": "0.0.0",
+  "description": "A TinyMCE based project for providing richer email templating functionality in Dynamics CRM",
+  "main": "CustomEmailTemplate.js",
+  "moduleType": [
+    "amd",
+    "es6",
+    "node"
+  ],
+  "keywords": [
+    "DynamicsCrm"
+  ],
+  "authors": [
+    "Dag Ole Kristoffersen"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
