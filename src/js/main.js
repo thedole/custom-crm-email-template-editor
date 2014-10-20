@@ -1,11 +1,19 @@
 window.onload = function(){
 	tinymce.init({
 		mode: "exact",
-    	elements: "templateinput"
+    	elements: "templateinput",
+    	resize: false,
+    	height: 370,
+    	menubar: false,
+    	// menu : {
+	    //     edit   : {title : 'Edit'  , items : 'undo redo | cut copy paste pastetext | selectall'},
+	    //     format : {title : 'Format', items : 'bold italic underline strikethrough superscript subscript | formats | removeformat'},
+	    //     table  : {title : 'Table' , items : 'inserttable tableprops deletetable | cell row column'}
+	    // },
+	    toolbar: "cut copy paste | undo redo | styleselect | bold italic | forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | image | table",
+
+    	plugins: "table,paste,image,textcolor",
+    	paste_data_images: true,
+
 	 });
-	setTimeout(
-		function(){
-			var iFrame = document.querySelector("#WebResource_customemailtemplate_index");
-		}, 
-		3000);
 	};

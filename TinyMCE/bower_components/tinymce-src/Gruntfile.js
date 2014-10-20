@@ -692,7 +692,7 @@ module.exports = function(grunt) {
 	});
 
 	grunt.option("themes", "modern");
-	grunt.option("plugins", "table,paste");
+	grunt.option("plugins", "table,paste,textcolor,image");
 	require("load-grunt-tasks")(grunt);
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadTasks("tools/tasks");
