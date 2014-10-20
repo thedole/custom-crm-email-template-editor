@@ -16,7 +16,7 @@ window.onload = function(){
     	paste_data_images: true,
     	setup: function(editor) {
 	        editor.on('change', function(e) {
-	        	var message = 'Test';
+	        	var message = editor.getContent();
 	            window.parent.postMessage(message, '*');
 	        });
 	    }
