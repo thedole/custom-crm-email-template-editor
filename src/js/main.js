@@ -5,6 +5,7 @@ window.onload = function(){
     	resize: false,
     	height: 370,
     	menubar: false,
+    	entity_encoding : "raw",
     	// menu : {
 	    //     edit   : {title : 'Edit'  , items : 'undo redo | cut copy paste pastetext | selectall'},
 	    //     format : {title : 'Format', items : 'bold italic underline strikethrough superscript subscript | formats | removeformat'},
