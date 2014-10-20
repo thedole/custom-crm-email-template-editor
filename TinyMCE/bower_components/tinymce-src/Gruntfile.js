@@ -678,17 +678,23 @@ module.exports = function(grunt) {
 			}
 		},
 		copy: {
-			main: {
-				nonull: true,
-				src: 'js/tinymce/tinymce.full.min.js',
-				dest: '../../../src/js/tinymce.min.js',
-			},		}
+			main:
+			{
+				files:  [
+					{
+						nonull: true,
+						src: 'js/tinymce/tinymce.full.min.js',
+						dest: '../../../src/js/tinymce.full.min.js',
+					}
+				]
+			}
+		}
 	});
 
-	grunt.option('themes', "modern");
-	grunt.option('plugins', "table,paste");
+	grunt.option("themes", "modern");
+	grunt.option("plugins", "table,paste");
 	require("load-grunt-tasks")(grunt);
-	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadTasks("tools/tasks");
 
 	grunt.registerTask("lint", ["eslint", "jshint", "jscs"]);
