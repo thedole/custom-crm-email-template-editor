@@ -15,10 +15,12 @@ window.onload = function(){
     	plugins: "table,paste,image,textcolor",
     	paste_data_images: true,
     	setup: function(editor) {
-	        editor.on('change', function(e) {
+	        editor.on('keyup', changeHandler);
+	        editor.on('change', changeHandler);
+	        function changeHandler(e) {
 	        	var message = editor.getContent();
 	            window.parent.postMessage(message, '*');
-	        });
+	        }
 	    }
 
 	});
