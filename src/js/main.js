@@ -14,6 +14,12 @@ window.onload = function(){
 
     	plugins: "table,paste,image,textcolor",
     	paste_data_images: true,
+    	setup: function(editor) {
+	        editor.on('change', function(e) {
+	        	var message = 'Test';
+	            window.parent.postMessage(message, '*');
+	        });
+	    }
 
-	 });
-	};
+	});
+};
